@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LNImageScrollView"
-  s.version      = "1.0.2"
+  s.version      = "1.1.3"
   s.summary      = "A short description of LNImageScrollView."
 
   # This description is used to generate tags and improve search results.
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+   s.platform     = :ios, "7.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/nanaLxs/ImageScroller.git", :tag => "1.0.2" }
+  s.source       = { :git => "https://github.com/nanaLxs/ImageScroller.git", :tag => "1.1.3" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -116,7 +116,7 @@ s.source_files  =  'ImagesScroller/*{h,m}'
   #  the lib prefix of their name.
   #
 
-    #s.framework  = "UIKit"
+   #s.framework  = "UIKit"
    s.frameworks = "UIKit", "UIImageView+AFNetworking"
 
   # s.library   = "iconv"
