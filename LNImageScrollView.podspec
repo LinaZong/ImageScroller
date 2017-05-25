@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LNImageScrollView"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A short description of LNImageScrollView."
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/nanaLxs/ImageScroller.git", :tag => "1.0.1" }
+  s.source       = { :git => "https://github.com/nanaLxs/ImageScroller.git", :tag => "1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,7 +93,7 @@ Pod::Spec.new do |s|
 s.source_files  =  'ImagesScroller/*{h,m}'
  #s.exclude_files = "Classes/Exclude"
 
-   s.public_header_files = "ImagesScroller/ImageScroller.h"
+# s.public_header_files = "ImagesScroller/ImageScroller.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -104,8 +104,8 @@ s.source_files  =  'ImagesScroller/*{h,m}'
   #  non-essential files like tests, examples and documentation.
   #
 
-  # s.resource  = "icon.png"
-s.resources = "ImagesScroller/ImagesScrollView.xib"
+   s.resource  = "ImagesScroller/ImagesScrollView.xib"
+#s.resources = "ImagesScroller/ImagesScrollView.xib"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -116,8 +116,8 @@ s.resources = "ImagesScroller/ImagesScrollView.xib"
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+    #s.framework  = "UIKit"
+   s.frameworks = "UIKit", "UIImageView+AFNetworking"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
