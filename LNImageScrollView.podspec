@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LNImageScrollView"
-  s.version      = "1.1.3"
+  s.version      = "1.1.4"
   s.summary      = "A short description of LNImageScrollView."
 
   # This description is used to generate tags and improve search results.
@@ -53,15 +53,8 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "zonglina" => "zonglina@ibg100.com" }
-  # Or just: s.author    = "zonglina"
-  # s.authors            = { "zonglina" => "zonglina@ibg100.com" }
-  # s.social_media_url   = "http://twitter.com/zonglina"
 
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
+
 
   # s.platform     = :ios
    s.platform     = :ios, "7.0"
@@ -79,7 +72,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/nanaLxs/ImageScroller.git", :tag => "1.1.3" }
+  s.source       = { :git => "https://github.com/nanaLxs/ImageScroller.git", :tag => "1.1.4" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -93,7 +86,7 @@ Pod::Spec.new do |s|
 s.source_files  =  'ImagesScroller/*{h,m}'
  #s.exclude_files = "Classes/Exclude"
 
-# s.public_header_files = "ImagesScroller/ImageScroller.h"
+ s.public_header_files = "ImagesScroller/ImageScroller.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -118,6 +111,7 @@ s.source_files  =  'ImagesScroller/*{h,m}'
 
    #s.framework  = "UIKit"
    s.frameworks = "UIKit", "UIImageView+AFNetworking"
+   s.dependency 'AFNetworking','~>3.0'
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
