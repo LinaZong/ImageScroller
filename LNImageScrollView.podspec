@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LNImageScrollView"
-  s.version      = "1.0.6"
+  s.version      = "1.0.1"
   s.summary      = "A short description of LNImageScrollView."
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/nanaLxs/ImageScroller.git", :tag => "1.0.6" }
+  s.source       = { :git => "https://github.com/nanaLxs/ImageScroller.git", :tag => "1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,10 +90,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
- s.source_files  =  'ImageScroller/*'
+s.source_files  =  'ImagesScroller/*{h,m}'
  #s.exclude_files = "Classes/Exclude"
 
-   s.public_header_files = "ImageScroller.h"
+   s.public_header_files = "ImagesScroller/ImageScroller.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+s.resources = "ImagesScroller/ImagesScrollView.xib"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
