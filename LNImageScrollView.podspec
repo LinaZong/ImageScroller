@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LNImageScrollView"
-  s.version      = "1.1.4"
+  s.version      = "1.1.5"
   s.summary      = "A short description of LNImageScrollView."
 
   # This description is used to generate tags and improve search results.
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/nanaLxs/ImageScroller.git", :tag => "1.1.4" }
+  s.source       = { :git => "https://github.com/nanaLxs/ImageScroller.git", :tag => "1.1.5" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -86,7 +86,7 @@ Pod::Spec.new do |s|
 s.source_files  =  'ImagesScroller/*{h,m}'
  #s.exclude_files = "Classes/Exclude"
 
- s.public_header_files = "ImagesScroller/ImageScroller.h"
+ s.public_header_files = "ImageScroller.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -111,7 +111,7 @@ s.source_files  =  'ImagesScroller/*{h,m}'
 
    #s.framework  = "UIKit"
    s.frameworks = "UIKit", "UIImageView+AFNetworking"
-   s.dependency 'AFNetworking','~>3.0'
+
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -123,9 +123,9 @@ s.source_files  =  'ImagesScroller/*{h,m}'
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+   s.dependency "AFNetworking", "~> 3.0"
 
 end
